@@ -1,0 +1,46 @@
+/*! pluss.css v0.1.1 | MIT License | smooster.com */
+.container {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  transition: all 2s ease-in 0s;
+  /* explorer 10 */
+  -webkit-transition: all 2s ease-in 0s;
+  /* chrome & safari */
+  -moz-transition: all 2s ease-in 0s;
+  /* firefox */
+  -o-transition: all 2s ease-in 0s;
+  /* opera */
+}
+.container div {
+  height: 5px;
+  background-color: #000;
+}
+.container .horizontal {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.container .vertical {
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.container:hover {
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
